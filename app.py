@@ -109,7 +109,7 @@ import shutil
 temp_audio_dir="./cloned_voices"
 os.makedirs(temp_audio_dir, exist_ok=True)
 
-def tts_file_name(text, language=""):
+def tts_file_name(text, language="en"):
     global temp_audio_dir
     # Clean and process the text
     text = re.sub(r'[^a-zA-Z\s]', '', text)  # Keep only letters and spaces
